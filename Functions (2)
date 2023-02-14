@@ -1,0 +1,211 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO9yINbGDKEXqfcykD/49cu",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/NormilDiaz/OOP-58001/blob/main/Functions%20(2)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Range"
+      ],
+      "metadata": {
+        "id": "XQ3zesoMIOLL"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "yL_OYZ7bH3lw"
+      },
+      "outputs": [],
+      "source": [
+        "#range() function\n",
+        "for x in range(6):\n",
+        "  print(x)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for x in range(2,6):\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "id": "ODDaOB41JBCL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for x in range(2,6,2):\n",
+        "  print(x)"
+      ],
+      "metadata": {
+        "id": "dL3DYnACJE96"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Functions:"
+      ],
+      "metadata": {
+        "id": "HcFzvDT1JJh0"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class Shapes:\n",
+        "  def __init__(self, length, width):\n",
+        "    self.length = length\n",
+        "    self.width = width\n",
+        "  def area(self):\n",
+        "    return self.length * self.width\n",
+        "rectangle = Shapes(10,5)\n",
+        "rectangle.area()\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "zrx3XGNXMOJK"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "example of \n",
+        "\n",
+        "rectangle = Shapes(10,5)\n",
+        "\n",
+        "rectangle.area()"
+      ],
+      "metadata": {
+        "id": "0rEK3vHfNpmS"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pow(10,2)\n",
+        "array = ['angle', 'banana', 'orange']\n",
+        "array.insert(0,'cherry')\n",
+        "print(array)"
+      ],
+      "metadata": {
+        "id": "pCS6tCCrNaCr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Activity #1"
+      ],
+      "metadata": {
+        "id": "9AV9srasQymT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class person:\n",
+        "  def __init__(self, name, age):\n",
+        "    self.name = name\n",
+        "    self.age = age\n",
+        "  def func(self):\n",
+        "    print(self.name + \" \" + self.age)\n",
+        "user = person(\"Normil Diaz\",\"19 Years old\")\n",
+        "user.func()"
+      ],
+      "metadata": {
+        "id": "ANrSiI8HTPrQ"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "List"
+      ],
+      "metadata": {
+        "id": "uxLAeORhU8Gq"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "pi = 3.14159\n",
+        "varList = ['abc',1,'def',2]\n",
+        "print(varList[0])\n",
+        "varList.append('ghi')\n",
+        "print(varList)\n",
+        "varList.remove(2)\n",
+        "print(varList)\n",
+        "varList.insert(3,3)\n",
+        "print(varList)"
+      ],
+      "metadata": {
+        "id": "TXnvtKIoU8-B"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Dictionaries"
+      ],
+      "metadata": {
+        "id": "QaYdeH0EWkqa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "students = {\n",
+        "    1:'Normil',\n",
+        "    2:'Diaz',\n",
+        "    3:'Heston'\n",
+        "}\n",
+        "print(students)"
+      ],
+      "metadata": {
+        "id": "TwL4cUCQWltp"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
