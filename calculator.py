@@ -31,6 +31,18 @@ class MyWindow:
         self.btnsub.place(x = 150, y = 200)
         self.btnsub.bind('<Button-1>', self.sub)
 
+        self.btnmult = Button(win, text = "Multiply")
+        self.btnmult.place(x = 200, y = 200)
+        self.btnmult.bind('<Button-1>', self.mult)
+
+        self.btndiv = Button(win, text = "Divide")
+        self.btndiv.place(x = 270, y = 200)
+        self.btndiv.bind('<Button-1>', self.div)
+
+        self.btnclr = Button(win, text = "Clear")
+        self.btnclr.place(x = 330, y = 200)
+        self.btnclr.bind('<Button-1>', self.clr)
+
 #add event-handling /bind () method
 
     def add(self, add):
@@ -46,6 +58,25 @@ class MyWindow:
         num2 = int(self.txt2.get())
         result = num1 - num2
         self.txt3.insert(END, str(result))
+
+    def mult(self, mult):
+        self.txt3.delete(0, 'end')
+        num1 = int(self.txt1.get())
+        num2 = int(self.txt2.get())
+        result = num1 * num2
+        self.txt3.insert(END, str(result))
+
+    def div(self, div):
+        self.txt3.delete(0, 'end')
+        num1 = int(self.txt1.get())
+        num2 = int(self.txt2.get())
+        result = num1 / num2
+        self.txt3.insert(END, str(result))
+
+    def clr(self, clr):
+        self.txt1.delete(0, 'end')
+        self.txt2.delete(0, 'end')
+        self.txt3.delete(0, 'end')
 
 window = Tk()
 mywin = MyWindow(window)
